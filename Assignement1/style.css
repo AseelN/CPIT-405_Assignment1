@@ -1,0 +1,241 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/1200x/f4/64/e7/f464e7e5047d594d0c27a49a90bb61c7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #111;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar (left with name, photo, contact) */
+.sidebar {
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid darkblue;
+}
+
+.sidebar h2 {
+  color: darkblue;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sidebar p {
+  margin: 8px 0;
+  text-align: center;
+}
+
+.sidebar a {
+  color: darkred;
+  text-decoration: none; /* Remove underline from all links */
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #333;
+  transition: transform 0.3s, color 0.3s;
+}
+.social-icons a:hover {
+  color: darkblue;
+  transform: scale(1.2);
+}
+
+/* Main layout */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.88);
+  padding: 20px;
+}
+
+/* Top navigation */
+header {
+  position: sticky;       /* makes it stay at the top */
+  top: 0;                 /* sticks to top */
+  z-index: 1000;          /* ensures it stays above other content */
+  background-color: rgba(0, 0, 0, 0.8); /* keeps your semi-transparent black */
+  padding: 10px 0;        /* keeps your padding */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* subtle shadow for depth */
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: darkred;
+  color: #fff;
+}
+
+/* Fragment links (About Me link) */
+a.fragment-link {
+  color: #0077cc;
+}
+
+/* Active nav link highlight */
+nav ul li a.active {
+  background-color: darkblue;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+/* Page sections */
+section {
+  margin: 20px 0;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+  color: darkblue;
+}
+
+/* About Me Pseudo-elements */
+#about-me p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+  color: #0077cc;
+}
+#about-me h1::before {
+  content: "★ ";
+  color: #ff9800;
+}
+#about-me h1::after {
+  content: " ★";
+  color: #ff9800;
+}
+
+p, li, td, th {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Tables: general styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background-color: #fff;
+}
+
+table, th, td {
+  border: 1px solid #111;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Schedule and courses table: odd/even row coloring */
+tbody tr:nth-child(odd) {
+  background-color: #f0f8ff; /* light blue for odd rows */
+}
+tbody tr:nth-child(even) {
+  background-color: #fff; /* white for even rows */
+}
+
+/* Different hover effects for odd/even rows */
+tbody tr:nth-child(odd):hover {
+  background-color: #d0e4ff; /* darker blue on hover */
+}
+tbody tr:nth-child(even):hover {
+  background-color: #c0c0ff; /* different hover color for even rows */
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: darkred;
+}
+.profile-pic { 
+    border: 3px solid transparent; 
+    animation: borderColorChange 3s infinite; 
+} 
+
+@keyframes borderColorChange { 
+    0% { border-color: red; } 
+    25% { border-color: orange; } 
+    50% { border-color: yellow; } 
+    75% { border-color: green; } 
+    100% { border-color: red; } 
+}
+
+footer {
+  position: fixed;      /* fixed to viewport */
+  bottom: 0;            /* sticks to bottom */
+  left: 0;              /* spans full width */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  z-index: 1000;        /* stays above other content */
+}

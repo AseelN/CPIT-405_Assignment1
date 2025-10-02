@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Aseel AlNefaie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar">
+    <img src="images/Profile.png" alt="Aseel AlNefaie Logo" class="profile-pic">
+    <h2>Aseel Mashhour AlNefaie</h2>
+    <p><strong>Information Technology Student</strong></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:Aseelalnefaie03@gmail.com">Aseelalnefaie03@gmail.com</a></p>
+    <p><i class="fas fa-phone"></i> <a href="tel:+966555955796">+966 55 595 5796</a></p>
+    <p><i class="fas fa-map-marker-alt"></i> Jeddah, Saudi Arabia</p>
+
+    <!-- Social Media -->
+    <div class="social-icons">
+      <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1>Contact Me</h1>
+      <form action="https://webhook.site/212f6b42-4d6f-49ed-962a-2ae27a1269a0" method="POST">
+        <label for="name">Name (required):</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email (optional):</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="10" required></textarea>
+
+        <fieldset>
+          <legend>Message Type:</legend>
+          <label><input type="radio" name="type" value="Inquiry" required> Inquiry</label>
+          <label><input type="radio" name="type" value="Complaint" required> Complaint</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Aseel Mashhour AlNefaie</p>
+  </footer>
+
+</body>
+</html>

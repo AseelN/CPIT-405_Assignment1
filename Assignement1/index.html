@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aseel Mashhour AlNefaie - CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar">
+    <img src="images/Profile.png" alt="Aseel AlNefaie Logo" class="profile-pic">
+
+    <h2>Aseel Mashhour AlNefaie</h2>
+    <p><strong>Information Technology Student</strong></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:Aseelalnefaie03@gmail.com">Aseelalnefaie03@gmail.com</a></p>
+    <p><i class="fas fa-phone"></i> <a href="tel:+966555955796">+966 55 595 5796</a></p>
+    <p><i class="fas fa-map-marker-alt"></i> Jeddah, Saudi Arabia</p>
+
+    <!-- Social Media -->
+    <div class="social-icons">
+      <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="fragment-link active">About Me</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about-me">
+      <h1>About Me</h1>
+      <p>
+        I am an IT student at King Abdulaziz University (FCIT) with a passion for exploring technology and learning new skills. I recently attended a Cybersecurity and Drone Workshop from September 28th to 30th, where I had the opportunity to collaborate with other students and apply my knowledge in practical challenges. I also participated in a competition during the workshop, teaming up with another group to solve real-world tech problems. Beyond workshops and projects, I enjoy programming, problem-solving, and discovering innovative ways to use technology in everyday life.
+      </p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Programming: Java, Python, SQL, C++, Bash</li>
+        <li>Cybersecurity: Threat analysis, secure coding, network security</li>
+        <li>Tools: Database Management, System Analysis, UI/UX Design</li>
+        <li>Soft Skills: Critical Thinking, Creativity, Adaptability</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Aseel Mashhour AlNefaie</p>
+  </footer>
+
+  <!-- Optional JS to auto-highlight active nav link -->
+  <script>
+    const links = document.querySelectorAll('nav ul li a');
+    const current = location.pathname.split("/").pop();
+    links.forEach(link => {
+      if(link.getAttribute('href') === current){
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>
+
